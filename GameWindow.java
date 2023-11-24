@@ -22,8 +22,9 @@ public class GameWindow extends JFrame {
         setTitle("TicTacToe");
         setResizable(false);
 
+
         map = new Map();
-        settings = new SettingsWindow(this); //Объек в качестве ссылки передает себя
+        settings = new SettingsWindow(this);
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
