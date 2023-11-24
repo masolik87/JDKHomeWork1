@@ -1,6 +1,5 @@
 package org.example;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -117,6 +116,7 @@ public class Map extends JPanel {
         for (int y = 0; y < fieldSizeY; y++) {
             for (int x = 0; x < fieldSizeX; x++) {
                 if (field[y][x] == EMPTY_DOT) continue;
+                
                 if (field[y][x] == HUMAN_DOT) {
                     g.setColor(Color.BLUE);
                     g.fillOval(x * cellWidth + DOT_PADDING,
